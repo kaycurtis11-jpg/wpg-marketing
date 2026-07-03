@@ -64,6 +64,9 @@ export default function FAQSection() {
           <h2 style={{ fontSize: 'clamp(1.75rem, 3vw, 2.25rem)', color: '#14161C' }}>
             Common questions
           </h2>
+          <p className="wd-faq-tagline">
+            Everything you need to know before your first clean.
+          </p>
         </div>
         <div className="wd-faq-list">
           {FAQS.map((item, i) => (
@@ -75,8 +78,9 @@ export default function FAQSection() {
               >
                 <span>{item.q}</span>
                 <span className="wd-faq-icon" aria-hidden="true">
-                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 8l5 5 5-5" strokeLinecap="round" strokeLinejoin="round" />
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                    <line x1="7" y1="1" x2="7" y2="13" />
+                    <line x1="1" y1="7" x2="13" y2="7" />
                   </svg>
                 </span>
               </button>
