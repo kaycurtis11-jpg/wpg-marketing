@@ -310,7 +310,7 @@ export default function WebsitePage() {
         </div>
         <div className="wd-story-image">
           <Image
-            src="/images/article.jpg"
+            src="/article.jpg"
             alt="WPG Local Cleaners featured in Winnipeg Free Press"
             fill
             style={{ objectFit: 'cover', objectPosition: 'center top' }}
@@ -454,7 +454,7 @@ export default function WebsitePage() {
             <div>
               <div className="wd-team-photo-wrap">
                 <Image
-                  src="/images/kayla.jpg"
+                  src="/kayla.jpg"
                   alt="Kayla Curtis — Founder & CEO"
                   fill
                   style={{ objectFit: 'cover', objectPosition: 'center top' }}
@@ -468,7 +468,7 @@ export default function WebsitePage() {
             <div>
               <div className="wd-team-photo-wrap">
                 <Image
-                  src="/images/desiree.jpg"
+                  src="/desiree.jpg"
                   alt="Desiree — Operations Manager"
                   fill
                   style={{ objectFit: 'cover', objectPosition: 'center top' }}
@@ -482,7 +482,7 @@ export default function WebsitePage() {
             <div>
               <div className="wd-team-photo-wrap">
                 <Image
-                  src="/images/krisann.jpg"
+                  src="/krisann.jpg"
                   alt="Kris Ann — Communications Manager"
                   fill
                   style={{ objectFit: 'cover', objectPosition: 'center top' }}
@@ -524,7 +524,7 @@ export default function WebsitePage() {
           <a href="/downloads/checklist.pdf" target="_blank" rel="noopener noreferrer" style={{ display: 'block' }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/checklist-preview.png"
+              src="/checklist-preview.png"
               alt="WPG Local Cleaners cleaning checklist preview"
               style={{ width: '100%', borderRadius: '8px', boxShadow: '0 8px 40px rgba(0,0,0,0.25)', display: 'block' }}
             />

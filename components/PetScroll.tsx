@@ -3,21 +3,21 @@
 import { useRef } from 'react'
 
 const PETS = [
-  { src: '/images/pets/cat.jpg', alt: 'Cat on clean stairs' },
-  { src: '/images/pets/lab.jpg', alt: 'Dog relaxing on couch' },
-  { src: '/images/pets/husky.jpg', alt: 'Husky with blue eyes' },
-  { src: '/images/pets/calico.jpg', alt: 'Calico kitten' },
-  { src: '/images/pets/cat-sink.jpg', alt: 'Cat exploring clean bathroom sink' },
-  { src: '/images/pets/fluffy.jpg', alt: 'Fluffy dog on clean rug' },
-  { src: '/images/pets/shihtzu.jpg', alt: 'Shih Tzu on clean floor' },
-  { src: '/images/pets/golden.jpg', alt: 'Golden lab on couch' },
-  { src: '/images/pets/black-lab.jpg', alt: 'Black lab on clean floor' },
-  { src: '/images/pets/shepherd.jpg', alt: 'Shepherd mix on carpet' },
-  { src: '/images/pets/yorkie.jpg', alt: 'Yorkie napping in sweater' },
-  { src: '/images/pets/vacuum-dog.jpg', alt: 'Dog watching cleaner vacuum' },
-  { src: '/images/pets/sunny-lab.jpg', alt: 'Lab relaxing in sunny living room' },
-  { src: '/images/pets/couch-lab.jpg', alt: 'Black lab on leather couch' },
-  { src: '/images/pets/chihuahua.jpg', alt: 'Chihuahua on clean floor' },
+  { src: '/pets/cat.jpg', alt: 'Cat on clean stairs' },
+  { src: '/pets/lab.jpg', alt: 'Dog relaxing on couch' },
+  { src: '/pets/husky.jpg', alt: 'Husky with blue eyes' },
+  { src: '/pets/calico.jpg', alt: 'Calico kitten' },
+  { src: '/pets/cat-sink.jpg', alt: 'Cat exploring clean bathroom sink' },
+  { src: '/pets/fluffy.jpg', alt: 'Fluffy dog on clean rug' },
+  { src: '/pets/shihtzu.jpg', alt: 'Shih Tzu on clean floor' },
+  { src: '/pets/golden.jpg', alt: 'Golden lab on couch' },
+  { src: '/pets/black-lab.jpg', alt: 'Black lab on clean floor' },
+  { src: '/pets/shepherd.jpg', alt: 'Shepherd mix on carpet' },
+  { src: '/pets/yorkie.jpg', alt: 'Yorkie napping in sweater' },
+  { src: '/pets/vacuum-dog.jpg', alt: 'Dog watching cleaner vacuum' },
+  { src: '/pets/sunny-lab.jpg', alt: 'Lab relaxing in sunny living room' },
+  { src: '/pets/couch-lab.jpg', alt: 'Black lab on leather couch' },
+  { src: '/pets/chihuahua.jpg', alt: 'Chihuahua on clean floor' },
 ]
 
 export default function PetScroll() {
