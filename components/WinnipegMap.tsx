@@ -5,16 +5,19 @@ import { useEffect, useRef } from 'react'
 const LOCATIONS = [
   { name: 'Downtown',        lat: 49.8954, lng: -97.1385 },
   { name: 'Osborne Village', lat: 49.8820, lng: -97.1440 },
-  { name: 'River Heights',   lat: 49.8750, lng: -97.1630 },
-  { name: 'St. Vital',       lat: 49.8530, lng: -97.0950 },
-  { name: 'St. James',       lat: 49.9050, lng: -97.2200 },
-  { name: 'Transcona',       lat: 49.8900, lng: -97.0200 },
-  { name: 'North End',       lat: 49.9200, lng: -97.1500 },
-  { name: 'Wolseley',        lat: 49.8900, lng: -97.1700 },
-  { name: 'Fort Rouge',      lat: 49.8700, lng: -97.1350 },
-  { name: 'Tuxedo',          lat: 49.8650, lng: -97.2000 },
-  { name: 'St. Boniface',    lat: 49.8850, lng: -97.0800 },
-  { name: 'Charleswood',     lat: 49.8700, lng: -97.2400 },
+  { name: 'River Heights',   lat: 49.8735, lng: -97.1750 },
+  { name: 'St. Vital',       lat: 49.8420, lng: -97.0880 },
+  { name: 'St. James',       lat: 49.9050, lng: -97.2450 },
+  { name: 'Transcona',       lat: 49.8870, lng: -96.9700 },
+  { name: 'North End',       lat: 49.9320, lng: -97.1480 },
+  { name: 'Wolseley',        lat: 49.8920, lng: -97.1870 },
+  { name: 'Fort Rouge',      lat: 49.8680, lng: -97.1350 },
+  { name: 'Tuxedo',          lat: 49.8620, lng: -97.2150 },
+  { name: 'St. Boniface',    lat: 49.8790, lng: -97.0550 },
+  { name: 'Charleswood',     lat: 49.8600, lng: -97.2700 },
+  { name: 'Windsor Park',    lat: 49.8350, lng: -97.0750 },
+  { name: 'Maples',          lat: 49.9480, lng: -97.1750 },
+  { name: 'East Kildonan',   lat: 49.9150, lng: -97.0800 },
 ]
 
 const PIN_HTML = `
@@ -59,7 +62,7 @@ export default function WinnipegMap() {
 
       const map = L.map(container, {
         center: [49.8951, -97.1384],
-        zoom: 11,
+        zoom: 10,
         zoomControl: false,
         scrollWheelZoom: false,
         attributionControl: false,
