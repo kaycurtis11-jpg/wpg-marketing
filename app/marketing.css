@@ -569,11 +569,6 @@
 }
 
 /* ── Stats bar ── */
-@keyframes wd-stats-tick {
-  from { transform: translateY(0); }
-  to   { transform: translateY(-50%); }
-}
-
 .wd-stats {
   background: white;
   border-top: 1px solid #E4EAF4;
@@ -581,31 +576,6 @@
   padding: 3.5rem 5rem;
 }
 
-/* Mobile vertical ticker — hidden on desktop */
-.wd-stats-ticker {
-  display: none;
-}
-
-.wd-stats-ticker-track {
-  display: flex;
-  flex-direction: column;
-  animation: wd-stats-tick 10s linear infinite;
-}
-
-.wd-stats-ticker-item {
-  height: 76px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .wd-stats-ticker-track {
-    animation-play-state: paused;
-  }
-}
 
 .wd-stats-grid {
   display: grid;
@@ -1258,19 +1228,22 @@
     gap: 2rem;
   }
 
-  .wd-stats-grid {
-    display: none;
-  }
-
   .wd-stats {
-    padding: 0;
-    overflow: hidden;
+    padding: 2.5rem 1.5rem;
   }
 
-  .wd-stats-ticker {
-    display: block;
-    overflow: hidden;
-    height: 76px;
+  .wd-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 0;
+  }
+
+  .wd-stat {
+    border-right: none;
+    padding: 0;
+  }
+
+  .wd-stat:nth-child(odd) {
+    border-right: 1px solid #D8E4F0;
   }
 
   .wd-nav-links {
