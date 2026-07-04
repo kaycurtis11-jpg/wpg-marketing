@@ -152,6 +152,26 @@ export default function WebsitePage() {
             </div>
           ))}
         </div>
+        {/* Mobile: vertical auto-scroll ticker */}
+        <div className="wd-stats-ticker" aria-hidden="true">
+          <div className="wd-stats-ticker-track">
+            {[
+              { num: '46', label: '5-Star Google Reviews' },
+              { num: '5,000+', label: 'Cleanings Completed' },
+              { num: '150', label: 'Homes Served Monthly' },
+              { num: 'WPG', label: 'Locally Owned' },
+              { num: '46', label: '5-Star Google Reviews' },
+              { num: '5,000+', label: 'Cleanings Completed' },
+              { num: '150', label: 'Homes Served Monthly' },
+              { num: 'WPG', label: 'Locally Owned' },
+            ].map(({ num, label }, i) => (
+              <div key={i} className="wd-stats-ticker-item">
+                <span className="wd-stat-num">{num}</span>
+                <span className="wd-stat-label">{label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* ─── SERVICES ─── */}
