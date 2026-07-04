@@ -21,7 +21,7 @@ const FAQS = [
   },
   {
     q: 'How do I pay?',
-    a: 'Payment is handled securely through our Jobber client portal. You\'ll receive an invoice after each clean and can pay online by credit card.',
+    a: 'We encourage e-transfer to info@wpglocalcleaners.ca — it\'s quick and easy. We also accept credit card payments securely through our Jobber client portal if you prefer to pay online.',
   },
   {
     q: 'Do you send the same cleaner every time?',
