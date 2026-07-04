@@ -1112,18 +1112,17 @@
 }
 
 .wd-instagram-embed-wrap {
-  flex: 0 0 320px;
+  flex: 0 0 328px;
   scroll-snap-align: start;
   border-radius: 8px;
   overflow: hidden;
-  background: #1A1D24;
 }
 
-.wd-instagram-frame {
-  width: 320px;
-  height: 560px;
-  display: block;
-  border: none;
+/* Instagram's embed.js controls the inner iframe size */
+.wd-instagram-embed-wrap .instagram-media {
+  border-radius: 8px !important;
+  min-width: unset !important;
+  width: 100% !important;
 }
 
 /* ── Responsive ── */
@@ -1272,11 +1271,6 @@
 
   .wd-instagram-embed-wrap {
     flex: 0 0 280px;
-  }
-
-  .wd-instagram-frame {
-    width: 280px;
-    height: 490px;
   }
 
   .wd-faq {

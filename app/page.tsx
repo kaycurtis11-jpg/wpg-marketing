@@ -4,6 +4,7 @@ import MarketingNav from '@/components/MarketingNav'
 import Marquee from '@/components/Marquee'
 import ScrollReveal from '@/components/ScrollReveal'
 import FAQSection from '@/components/FAQSection'
+import InstagramFeed from '@/components/InstagramFeed'
 import PetScroll from '@/components/PetScroll'
 import TransformationScroll from '@/components/TransformationScroll'
 
@@ -617,26 +618,7 @@ export default function WebsitePage() {
               {INSTAGRAM_HANDLE}
             </a>
           </div>
-          <div className="wd-instagram-embeds">
-            {[
-              { shortcode: 'DZdIbsmPAA8', type: 'reel' },
-              { shortcode: 'DY-bV8Ls-Fz', type: 'reel' },
-              { shortcode: 'DY51pI5N__M', type: 'reel' },
-              { shortcode: 'DYe-d8sNYko', type: 'p' },
-              { shortcode: 'DVO7Pq5Eksa', type: 'reel' },
-            ].map(({ shortcode, type }) => (
-              <div key={shortcode} className="wd-instagram-embed-wrap">
-                <iframe
-                  src={`https://www.instagram.com/${type}/${shortcode}/embed/`}
-                  className="wd-instagram-frame"
-                  frameBorder="0"
-                  scrolling="no"
-                  allowTransparency
-                  title={`Instagram ${type} ${shortcode}`}
-                />
-              </div>
-            ))}
-          </div>
+          <InstagramFeed />
         </div>
       </section>
 
