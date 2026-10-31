@@ -12,6 +12,7 @@ const WinnipegMap = dynamic(() => import('@/components/WinnipegMap'), { ssr: fal
 
 // ─── Update these URLs when configuring Jobber ───
 const JOBBER_CLIENT_PORTAL = 'https://clienthub.getjobber.com/client_hubs/2f141443-ea63-497c-9a52-35043f6f5033/login/new?source=share_login'
+const ESTIMATE_URL = 'https://clienthub.getjobber.com/hubs/2f141443-ea63-497c-9a52-35043f6f5033/public/requests/1842805/new'
 const ARTICLE_URL = 'https://www.winnipegfreepress.com/business/2025/09/22/leap-of-faith-lands-with-strength'
 
 const PHONE_DISPLAY = '204-500-1894'
@@ -109,7 +110,7 @@ export default function WebsitePage() {
             We match Winnipeg homes and businesses with vetted local cleaning professionals — experienced, background-checked, and priced fairly.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center' }}>
-            <a href="#estimate" className="wd-btn-pine-lg">Get an estimate</a>
+            <a href={ESTIMATE_URL} target="_blank" rel="noopener noreferrer" className="wd-btn-pine-lg">Get an estimate</a>
             <a href={PHONE_HREF} style={{ color: '#8C94A1', fontSize: '0.9375rem', textDecoration: 'none' }}>
               or call{' '}
               <span className="wd-mono" style={{ color: '#3A3F4C' }}>{PHONE_DISPLAY}</span>

@@ -8,6 +8,8 @@ interface MarketingNavProps {
   clientPortalUrl: string
 }
 
+const ESTIMATE_URL = 'https://clienthub.getjobber.com/hubs/2f141443-ea63-497c-9a52-35043f6f5033/public/requests/1842805/new'
+
 export default function MarketingNav({ clientPortalUrl }: MarketingNavProps) {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
@@ -44,7 +46,7 @@ export default function MarketingNav({ clientPortalUrl }: MarketingNavProps) {
             <a href={clientPortalUrl} target="_blank" rel="noopener noreferrer" className="wd-btn-outline-pine" style={{ fontSize: '0.875rem', padding: '0.6rem 1.25rem' }}>
               Client login
             </a>
-            <a href="#estimate" className="wd-btn-pine">
+            <a href={ESTIMATE_URL} target="_blank" rel="noopener noreferrer" className="wd-btn-pine">
               Get an estimate
             </a>
           </div>
@@ -81,7 +83,7 @@ export default function MarketingNav({ clientPortalUrl }: MarketingNavProps) {
             <a href={clientPortalUrl} target="_blank" rel="noopener noreferrer" className="wd-btn-outline-pine" onClick={close}>
               Client login
             </a>
-            <a href="#estimate" className="wd-btn-pine" onClick={close}>
+            <a href={ESTIMATE_URL} target="_blank" rel="noopener noreferrer" className="wd-btn-pine" onClick={close}>
               Get an estimate
             </a>
           </div>
